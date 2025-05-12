@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./CV.css" /> 
+    <link rel="stylesheet" href="./CV.css" />
     <title>Portfólio Felipe</title>
   </head>
   <body>
@@ -97,115 +97,292 @@
         </div>
       </div>
     </section>
-    <section id="contato" class="contato ">
-      <h2>Contato | Freelance</h2>
-      <form id="formulario-contato"">
-        <div class="row mb-3">
-          <div class="col" >
-            <label for="nome" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="nome" name="nome" required>
-          </div>
-          <div class="col">
-            <label for="sobrenome" class="form-label">Sobrenome</label>
-            <input type="text" class="form-control" id="sobrenome" name="sobrenome" required>
-          </div>
+    <section id="contato" class="contato">
+      <div class="divisao">
+        <div>
+          <h2>Contato:</h2>
+          <form id="formulario-contato">
+            <div class="row mb-3">
+              <div class="col">
+                <label for="nome" class="form-label">Nome</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nome"
+                  name="nome"
+                  required
+                />
+              </div>
+              <div class="col">
+                <label for="sobrenome" class="form-label">Sobrenome</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="sobrenome"
+                  name="sobrenome"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="telefone" class="form-label">Telefone</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="telefone"
+                name="telefone"
+                placeholder="(99) 99999-9999"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="seuemail@dominio.com"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea
+                class="form-control"
+                id="mensagem"
+                name="mensagem"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+
+            <div class="mb-3">
+              <button type="reset" class="btn btn-secondary">Limpar</button>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
         </div>
 
-        <div class="mb-3">
-          <label for="telefone" class="form-label">Telefone</label>
-          <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(99) 99999-9999" required>
+        <div>
+          <h2>Freelancer:</h2>
+          <form id="formulario-freelancer">
+            <div class="row mb-3">
+              <div class="col">
+                <label for="nome" class="form-label">Nome</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nome"
+                  name="nome"
+                  required
+                />
+              </div>
+              <div class="col">
+                <label for="sobrenome" class="form-label">Sobrenome</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="sobrenome"
+                  name="sobrenome"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="telefone" class="form-label">Telefone</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="telefone"
+                name="telefone"
+                placeholder="(99) 99999-9999"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="seuemail@dominio.com"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea
+                class="form-control"
+                id="mensagem"
+                name="mensagem"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="lingua" class="form-label">Língua aplicada</label>
+              <select class="form-select" id="lingua" name="lingua" required>
+                <option value="">Selecione</option>
+                <option value="pt-br">Português (pt-br)</option>
+                <option value="ingles">Inglês</option>
+                <option value="espanhol">Espanhol</option>
+                <option value="frances">Francês</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="arquivo" class="form-label"
+                >Prototipo (PDF, DOC, DOCX, JPEG, PNG)</label
+              >
+              <input
+                type="file"
+                class="form-control"
+                id="arquivo"
+                name="arquivo"
+                accept=".pdf,.doc,.docx,.jpeg,.jpg,.png"
+                required
+              />
+            </div>
+
+            <fieldset class="mb-3">
+              <legend>Linguagens Preferidas</legend>
+              <div class="form-check row">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="linguagens[]"
+                  value="JavaScript"
+                  id="js"
+                />
+                <label class="form-check-label" for="js">JavaScript</label>
+              </div>
+              <div class="form-check row">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="linguagens[]"
+                  value="Python"
+                  id="py"
+                />
+                <label class="form-check-label" for="py">Python</label>
+              </div>
+              <div class="form-check row">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="linguagens[]"
+                  value="Java"
+                  id="java"
+                />
+                <label class="form-check-label" for="java">Java</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="mb-3">
+              <legend>Banco de dados recomendado</legend>
+              <div class="form-check row">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="banco"
+                  id="mysql"
+                  value="MySQL"
+                  required
+                />
+                <label class="form-check-label" for="mysql">MySQL</label>
+              </div>
+              <div class="form-check row">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="banco"
+                  id="postgres"
+                  value="PostgreSQL"
+                />
+                <label class="form-check-label" for="postgres"
+                  >PostgreSQL</label
+                >
+              </div>
+              <div class="form-check row">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="banco"
+                  id="mongo"
+                  value="MongoDB"
+                />
+                <label class="form-check-label" for="mongo">MongoDB</label>
+              </div>
+            </fieldset>
+
+            <div class="mb-3">
+              <label for="turno" class="form-label">Turno de preferência</label>
+              <select class="form-select" id="turno" name="turno" required>
+                <option value="">Selecione</option>
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="horario" class="form-label"
+                >Melhor horário sugerido</label
+              >
+              <input
+                type="time"
+                class="form-control"
+                id="horario"
+                name="horario"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="data" class="form-label"
+                >Previsão de entrega desejada</label
+              >
+              <input
+                type="date"
+                class="form-control"
+                id="data"
+                name="data"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <button type="reset" class="btn btn-secondary">Limpar</button>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
         </div>
-
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="seuemail@dominio.com" required>
-        </div>
-
-        <div class="mb-3">
-          <label for="mensagem" class="form-label">Mensagem</label>
-          <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
-        </div>
-
-        <div class="mb-3">
-          <label for="lingua" class="form-label">Língua aplicada</label>
-          <select class="form-select" id="lingua" name="lingua" required>
-            <option value="">Selecione</option>
-            <option value="pt-br">Português (pt-br)</option>
-            <option value="ingles">Inglês</option>
-            <option value="espanhol">Espanhol</option>
-            <option value="frances">Francês</option>
-          </select>
-        </div>
-
-        <div class="mb-3">
-          <label for="arquivo" class="form-label">Prototipo (PDF, DOC, DOCX, JPEG, PNG)</label>
-          <input type="file" class="form-control" id="arquivo" name="arquivo" accept=".pdf,.doc,.docx,.jpeg,.jpg,.png" required>
-        </div>
-
-        <fieldset class="mb-3">
-          <legend>Linguagens Preferidas</legend>
-          <div class="form-check row">
-            <input class="form-check-input" type="checkbox" name="linguagens[]" value="JavaScript" id="js">
-            <label class="form-check-label" for="js">JavaScript</label>
-          </div>
-          <div class="form-check row">
-            <input class="form-check-input" type="checkbox" name="linguagens[]" value="Python" id="py">
-            <label class="form-check-label" for="py">Python</label>
-          </div>
-          <div class="form-check row">
-            <input class="form-check-input" type="checkbox" name="linguagens[]" value="Java" id="java">
-            <label class="form-check-label" for="java">Java</label>
-          </div>
-        </fieldset>
-
-        <fieldset class="mb-3">
-          <legend>Banco de dados recomendado</legend>
-          <div class="form-check row">
-            <input class="form-check-input" type="radio" name="banco" id="mysql" value="MySQL" required>
-            <label class="form-check-label" for="mysql">MySQL</label>
-          </div>
-          <div class="form-check row">
-            <input class="form-check-input" type="radio" name="banco" id="postgres" value="PostgreSQL">
-            <label class="form-check-label" for="postgres">PostgreSQL</label>
-          </div>
-          <div class="form-check row">
-            <input class="form-check-input" type="radio" name="banco" id="mongo" value="MongoDB">
-            <label class="form-check-label" for="mongo">MongoDB</label>
-          </div>
-        </fieldset>
-
-        <div class="mb-3">
-          <label for="turno" class="form-label">Turno de preferência</label>
-          <select class="form-select" id="turno" name="turno" required>
-            <option value="">Selecione</option>
-            <option value="manha">Manhã</option>
-            <option value="tarde">Tarde</option>
-            <option value="noite">Noite</option>
-          </select>
-        </div>
-
-        <div class="mb-3">
-          <label for="horario" class="form-label">Melhor horário sugerido</label>
-          <input type="time" class="form-control" id="horario" name="horario" required>
-        </div>
-
-        <div class="mb-3">
-          <label for="data" class="form-label">Previsão de entrega desejada</label>
-          <input type="date" class="form-control" id="data" name="data" required>
-        </div>
-
-        <div class="mb-3">
-          <button type="reset" class="btn btn-secondary">Limpar</button>
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
-      </form>
+      </div>
     </section>
     <script>
-    document.getElementById('formulario-contato').addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Formulário enviado com sucesso!');
-    });
-  </script>
-
+      document
+        .getElementById("formulario-contato")
+        .addEventListener("submit", function (e) {
+          e.preventDefault()
+          alert("Formulário enviado com sucesso!")
+        })
+    </script>
+    <script>
+      document
+        .getElementById("formulario-freelancer")
+        .addEventListener("submit", function (e) {
+          e.preventDefault()
+          alert("Formulário enviado com sucesso!")
+        })
+    </script>
   </body>
 </html>

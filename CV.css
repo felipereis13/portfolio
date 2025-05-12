@@ -178,22 +178,25 @@ h1 {
 
 
 
-.nome-form {
+.divisao {
+  display: flex;
+  justify-content: space-around;
+  
+
 }
-
-.campo-form {
-}
-
-.grupo-from {
-}
-
-.text-form {
-}
-
-
-
 
 #formulario-contato {
+  max-width: 700px;
+  margin: 0 auto;
+  height: min-content;
+  background: var(--vidro);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+#formulario-freelancer {
   max-width: 700px;
   margin: 0 auto;
   background: var(--vidro);
