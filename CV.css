@@ -90,6 +90,7 @@ h1 {
 
 .sobre {
   padding: 6rem 2rem;
+  height: 100vh;
 }
 
 .sobre-titulo {
@@ -111,6 +112,11 @@ h1 {
 
 .sobre-texto {
   font-size: 1.1rem;
+}
+
+.formacao {
+  padding: 6rem 2rem;
+  height: 100vh;
 }
 
 .projetos {
@@ -176,13 +182,9 @@ h1 {
   margin-bottom: 40px;
 }
 
-
-
 .divisao {
   display: flex;
   justify-content: space-around;
-  
-
 }
 
 #formulario-contato {
@@ -194,7 +196,6 @@ h1 {
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
-
 
 #formulario-freelancer {
   max-width: 700px;
@@ -220,7 +221,8 @@ h2 {
   margin-bottom: 20px;
 }
 
-.col-6, .col {
+.col-6,
+.col {
   flex: 1;
 }
 
@@ -300,12 +302,12 @@ button[type="reset"]:hover {
 }
 
 button[type="submit"] {
-  background-color: var(--primaria);;
+  background-color: var(--primaria);
   color: white;
 }
 
 button[type="submit"]:hover {
-  background-color: var(--primaria);;
+  background-color: var(--primaria);
 }
 
 @media (max-width: 600px) {
